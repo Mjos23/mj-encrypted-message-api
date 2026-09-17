@@ -1,20 +1,20 @@
 # GitHub repository
 
-Repository: [Mjos23/upgraded-octo-fortnight](https://github.com/Mjos23/upgraded-octo-fortnight).
+Repository: [Mjos23/mj-encrypted-message-api](https://github.com/Mjos23/mj-encrypted-message-api).
 
 Project: **Bangel C# Encrypted Message API**.
 
-The repository was created privately by its owner. Uploading this project does
-not change that visibility or deploy a live API. No license has been selected
-or added.
+The owner has made this repository public. Reviewers can inspect the source,
+documentation, and GitHub Actions results. No live API is deployed, and no
+license has been selected or added.
 
 ## Work with the source
 
-After the initial source upload:
+Clone the public repository and run the checks:
 
 ```sh
-git clone https://github.com/Mjos23/upgraded-octo-fortnight.git
-cd upgraded-octo-fortnight
+git clone https://github.com/Mjos23/mj-encrypted-message-api.git
+cd mj-encrypted-message-api
 dotnet restore --locked-mode
 dotnet build --configuration Release --no-restore
 dotnet format --verify-no-changes --no-restore
@@ -35,8 +35,8 @@ remaining limitations are recorded in `docs/VERIFICATION.md`.
 ## Prepare for applications
 
 Use `docs/PORTFOLIO.md` to practice the demo and explain the design decisions.
-Private repositories cannot be inspected by hiring teams without access.
-Any later visibility or licensing decision remains with the owner.
+The public repository link can be included in applications and shared with
+hiring teams.
 
 Suggested repository description:
 
