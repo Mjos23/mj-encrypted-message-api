@@ -1,6 +1,8 @@
 # Bangel C# Encrypted Message API
 
-Repository: [Mjos23/upgraded-octo-fortnight](https://github.com/Mjos23/upgraded-octo-fortnight).
+[![Build and test](https://github.com/Mjos23/mj-encrypted-message-api/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mjos23/mj-encrypted-message-api/actions/workflows/ci.yml?query=branch%3Amain)
+
+Repository: [Mjos23/mj-encrypted-message-api](https://github.com/Mjos23/mj-encrypted-message-api).
 
 A C# / ASP.NET Core API that validates an AES-256-GCM encrypted message and
 returns **accepted** or **rejected**. One route, a matching command-line client,
@@ -140,11 +142,13 @@ field, wrong keys and associated data, schema errors, size boundaries,
 oversized chunked requests, and invalid startup configuration. It also records
 the intentional current behavior that a replayed valid message is accepted.
 
-[GitHub Actions](.github/workflows/ci.yml) is configured to restore locked
-dependencies, build, check formatting, and test on Linux, Windows, and macOS.
+[GitHub Actions](.github/workflows/ci.yml) restores locked dependencies, builds,
+checks formatting, and tests on Linux, Windows, and macOS.
 The workflow runs on pushes and pull requests. It does not deploy a service.
-See [verification notes](docs/VERIFICATION.md) for the checks actually run before
-publication; a configured workflow is not evidence of a successful GitHub run.
+The [verified main-branch run](https://github.com/Mjos23/mj-encrypted-message-api/actions/runs/35271661304)
+passed all checks and all 42 tests on each platform. See
+[verification notes](docs/VERIFICATION.md) for the tested commit and local
+results; the badge above tracks the current `main` branch.
 
 ## Code map
 

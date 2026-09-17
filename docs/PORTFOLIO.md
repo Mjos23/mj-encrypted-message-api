@@ -5,13 +5,15 @@
 **Bangel C# Encrypted Message API — C#, ASP.NET Core, .NET, xUnit**
 
 Developed a C# API that validates AES-256-GCM encrypted messages, with strict
-request validation, a command-line client, HTTP integration tests, and GitHub
-Actions configuration.
+request validation, a command-line client, 42 integration tests, and GitHub
+Actions checks on Linux, Windows, and macOS.
 
-Repository: https://github.com/Mjos23/upgraded-octo-fortnight. It is private;
-external reviewers will need access before they can inspect it.
-Describe CI as configured until its
-actual GitHub runs pass. Do not present test counts as a security certification.
+Public repository: [Mjos23/mj-encrypted-message-api](https://github.com/Mjos23/mj-encrypted-message-api).
+
+[GitHub CI passed on all three platforms](https://github.com/Mjos23/mj-encrypted-message-api/actions/runs/35271661304).
+See [verification notes](VERIFICATION.md) for the tested commit and results.
+Passing tests demonstrate the covered behavior; they are not a security
+certification.
 
 ## A short interview walkthrough
 

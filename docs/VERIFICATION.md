@@ -1,4 +1,23 @@
-# Verification before the first GitHub push
+# Verification results
+
+## GitHub Actions
+
+Verified on September 17, 2026:
+[main-branch run #3](https://github.com/Mjos23/mj-encrypted-message-api/actions/runs/35271661304),
+commit `5c1fb41a7bda62d03229e0334e0dddd921f4891c`.
+
+| Platform | Locked restore | Release build | Full formatting check | Tests |
+| --- | --- | --- | --- | --- |
+| Linux | Passed | Passed; zero warnings/errors | Passed | 42 passed; zero failed/skipped |
+| Windows | Passed | Passed; zero warnings/errors | Passed | 42 passed; zero failed/skipped |
+| macOS | Passed | Passed; zero warnings/errors | Passed | 42 passed; zero failed/skipped |
+
+These are recorded results for the linked commit. The README badge and
+[Actions history](https://github.com/Mjos23/mj-encrypted-message-api/actions/workflows/ci.yml)
+show subsequent runs. The full formatter passed on GitHub, resolving the
+verification gap caused by the local environment described below.
+
+## Local verification before the first GitHub push
 
 Date: September 17, 2026. Environment: Linux x64, .NET SDK 10.0.401,
 ASP.NET Core runtime 10.0.12.
@@ -14,11 +33,9 @@ ASP.NET Core runtime 10.0.12.
 | Whitespace formatting check | Passed |
 | Workflow YAML and configured matrix | Parsed; three operating systems, read-only token |
 | Full project-aware `dotnet format` | Not completed locally; blocked by the environment's named-pipe restriction |
-| GitHub Actions execution | Pending repository publication |
-| Windows and macOS execution | Pending the corresponding GitHub CI jobs |
 | Public deployment | Not performed |
 
-## Commands exercised
+### Commands exercised
 
 ```sh
 dotnet restore --locked-mode -m:1
@@ -39,9 +56,8 @@ completed successfully on all five C# source files:
 dotnet format whitespace . --folder --include src/MessageApi/Program.cs src/MessageClient/Program.cs tests/MessageApi.Tests/ApiFactory.cs tests/MessageApi.Tests/MessageEndpointTests.cs tests/MessageApi.Tests/StartupTests.cs --verify-no-changes
 ```
 
-This narrower check is not a substitute for the full formatter. The full
-`dotnet format --verify-no-changes --no-restore` gate remains in GitHub CI.
-No successful remote CI status is claimed before that workflow runs.
+The full `dotnet format --verify-no-changes --no-restore` gate subsequently
+passed on all three GitHub platforms, as recorded above.
 
 ## Scope of the evidence
 
