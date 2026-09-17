@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/MessageApi/MessageApi.csproj" />
+    <Project Path="src/MessageClient/MessageClient.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/MessageApi.Tests/MessageApi.Tests.csproj" />
+  </Folder>
+</Solution>
