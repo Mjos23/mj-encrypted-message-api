@@ -1,5 +1,8 @@
 # Bangel C# Encrypted Message API
 
+> Current rights: all rights reserved by MJ Physics Engineering / Michael Bangel. No new license is granted by this revision. Prior grants and third-party notices remain effective; see the root LICENSE and LICENSING.md.
+
+
 [![Build and test](https://github.com/Mjos23/mj-encrypted-message-api/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Mjos23/mj-encrypted-message-api/actions/workflows/ci.yml?query=branch%3Amain)
 
 Repository: [Mjos23/mj-encrypted-message-api](https://github.com/Mjos23/mj-encrypted-message-api).
